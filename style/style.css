@@ -1,0 +1,92 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: #66CCFF;
+    padding: 20px;
+}
+
+header h1{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+body{
+    background-color: #EEEEEE;
+}
+
+nav{
+    width: 10%;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: #66CCFF;
+}
+
+.currentPage{
+    font: bold;
+    color: black;
+
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#container{
+    background-color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+#content{
+    padding: 20px 30px;
+    margin-bottom: 35%;
+    
+}
+
+#main{
+    width: 80%;
+    float: right;
+}
+
+footer{
+    clear: both;
+    text-align: center;
+    background-color: #66CCFF;
+    color: white;
+    padding: 20px;
+}
+
+/* Contact Us */
+
+#email #messages{
+    margin-bottom: 30px;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
+#email{
+    width: 100%;
+}
+#message{   
+    resize: vertical;
+    width: 100%;
+}
+
+/* Team photo */
+
+@media only screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  }
