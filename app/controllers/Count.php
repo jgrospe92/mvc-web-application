@@ -5,13 +5,10 @@ class Count extends \app\core\Controller{
 
     public function getCounter(){
         $counter;
-        $filename = 'app/resources/txt/counter.txt';
+        $counterObj = new app\models\Count();
 
         if(file_exists($filename)){
-            $fh = fopen($filename, 'r');
-            flock($fh, LOCK_SH);
-            $counter = (int)fread($fh, filesize($filename));
-            fclose($fh);
+            $counter = $counterObj->get_counter();
         }
         else {
             $counter = 0;
@@ -19,9 +16,12 @@ class Count extends \app\core\Controller{
         $dCounter = json_decode($counter);
         $counter = json_encode(++$dCounter);
         echo $counter;
-        $fh = fopen($filename, 'w');
-        flock($fh, LOCK_EX);
-        fwrite($fh, $counter);
+        $counterObj->counter = $counter;
+        $counterObj->write_to_file_counter();
+
+        // $fh = fopen($filename, 'w');
+        // flock($fh, LOCK_EX);
+        // fwrite($fh, $counter);
     }
 
     public function index(){
