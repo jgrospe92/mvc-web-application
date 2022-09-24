@@ -7,19 +7,22 @@ class Count{
   public $counter;
   private static $filename = 'app/resources/txt/counter.txt';
 
-
   public function get_counter(){
-    $fh = fopen($filename, 'r');
+    $fh = fopen(self::$filename, 'r');
     flock($fh, LOCK_SH);
-    $counter = (int)fread($fh, filesize($filename));
+    $this->counter = (int)fread($fh, filesize(self::$filename));
     fclose($fh);
-    return  $counter;
+    return $this->counter;
+  }
+
+  public function get_file_name(){
+    return  self::$filename;
   }
 
   public function write_to_file_counter(){
-    $fh = fopen($filename, 'w');
+    $fh = fopen(self::$filename, 'w');
     flock($fh, LOCK_EX);
-    fwrite($fh, $counter);
+    fwrite($fh, $this->counter);
   }
 
 }

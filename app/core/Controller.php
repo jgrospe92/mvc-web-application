@@ -7,4 +7,5 @@ class Controller{
         include('app\\views\\'.$name.'.php');
         
     }
+
 }

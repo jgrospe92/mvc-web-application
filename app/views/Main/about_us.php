@@ -19,7 +19,7 @@
      <script type="text/javascript">
         $(function(){
             console.log("outside getJson");
-           $.getJSON('/Count/getCounter')
+            $.getJSON('/Count/counter_controller')
             .done(function(data){
                 var output = "";
                 console.log(data);

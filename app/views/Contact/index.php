@@ -19,7 +19,7 @@
      <script type="text/javascript">
         $(function(){
             console.log("outside getJson");
-           $.getJSON('/Count/getCounter')
+           $.getJSON('/Count/counter_controller')
             .done(function(data){
                 var output = "";
                 console.log(data);
@@ -66,6 +66,7 @@
                 </ul>
             </nav>
             <div id="main">
+                
                 <h2>Contact us</h2>
                 <p>Want to contact us? Write your email and message in the following boxes</p>
                 <form action="" method="POST">

@@ -12,8 +12,8 @@ class Main extends \app\core\Controller{
     }
 
     public function about_us(){
+
         $this->view('Main/about_us');
     }
-
-   
+ 
 }
