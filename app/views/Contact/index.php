@@ -34,23 +34,29 @@
     </script>
 </head>
 <body>
+    
     <?php
-        $filename = 'app/resources/txt/log.txt';
-    if(isset($_POST['submit'])){
-        $array['email'] = $_POST['email'];
-        $array['message'] = $_POST['message'];
-        $string_data = json_encode($array);
+    
+    //$filename = 'app/resources/txt/log.txt';
+    // if(isset($_POST['submit'])){
+    //     $array['name'] = $_POST['name'];
+    //     $array['message'] = $_POST['message'];
+    //     $string_data = json_encode($array);
+    //     $msgObject = new \app\models\Messages();
+    //     $msgObject->insert($string_data);
+    //     // write to a file
+    //     // $fh = fopen($filename,'a');
+    //     // flock($fh, LOCK_EX);
+    //     // fwrite($fh, $string_data . "\n");
+    //     // flock($fh, LOCK_UN);
+    //     // fclose($fh);
 
-        // write to a file
-        $fh = fopen($filename,'a');
-        flock($fh, LOCK_EX);
-        fwrite($fh, $string_data . "\n");
-        flock($fh, LOCK_UN);
-        fclose($fh);
+    //     //header('location:/Contact/read');
+    // }
 
-        header('location:/Contact/read');
-    }
+    
     ?>
+    
 <div id = "container">
         <header>
             <h1>CodeBros</h1>
@@ -66,12 +72,12 @@
                 </ul>
             </nav>
             <div id="main">
-                
-                <h2>Contact us</h2>
-                <p>Want to contact us? Write your email and message in the following boxes</p>
-                <form action="" method="POST">
-                    <label for="email">Email:</label> <br>
-                    <input type="text" id="email" name="email" placeholder="PhilipRieck@Gmail.com"/><br/>
+                <h2>Message board</h2>
+                <p>Leave a quote or encouragement below.</p>
+                <p><em>please be kind.</em></p>
+                <form action="/Contact/save_message" method="POST">
+                    <label for="email">Name/Nickname:</label> <br>
+                    <input type="text" id="email" name="name" placeholder="Anonymous"/><br/>
                     <label for="message">Message:</label> <br>
                     <textarea name="message" id="message" placeholder="Write something.."></textarea>
                     <input type="submit" value="Send" name="submit">

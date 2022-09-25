@@ -1,4 +1,6 @@
-{"email":"jeffreygrospe@yahoo.com","message":"Keep up the good work."}
-{"email":"jeffreygrospe@yahoo.com","message":"This is another message to make sure it works well"}
-{"email":"PhilipRieck@gmail.ca","message":"Hello, I'm so excited to see how the marketplace will turn out!! Great work!"}
-{"email":"PhilipRieck@outlook.com","message":"Assignment 1 is finished!"}
+{"name":"jeffreygrospe@yahoo.com","message":"Keep up the good work."}
+{"name":"jeffreygrospe@yahoo.com","message":"This is another message to make sure it works well"}
+{"name":"PhilipRieck@gmail.ca","message":"Hello, I'm so excited to see how the marketplace will turn out!! Great work!"}
+{"name":"PhilipRieck@outlook.com","message":"Assignment 1 is finished!"}
+{"name":"test","message":"test"}
+{"name":"Potato","message":"Don't give up on your dreams"}

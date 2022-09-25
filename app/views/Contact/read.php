@@ -56,12 +56,11 @@
                 <?php
                     $filename = 'app/resources/txt/log.txt';
                     $arr = file($filename);
-                   
-                    foreach($arr as $values){
+                    foreach( $arr as $values){
                         $newarr = json_decode($values);
-                        $user_email = $newarr->email;
+                        $user_name = $newarr->name;
                         $user_msg = $newarr->message;
-                        echo '<b>' . $user_email . '</b><br/>';
+                        echo '<b>' . $user_name . '</b><br/>';
                         echo '<p>' . $user_msg . '</p>';
                     }
                 ?>
