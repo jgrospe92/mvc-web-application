@@ -18,18 +18,15 @@
     </style>
      <script type="text/javascript">
         $(function(){
-            console.log("outside getJson");
             $.getJSON('/Count/counter_controller')
             .done(function(data){
                 var output = "";
-                console.log(data);
                 output+= '<p>'+data+ ' page visits</p>'
                 $('#view-counter').html(output);
             })
             .fail(function(){
                 $('#view-counter').html("currently not available");
             })
-            console.log("end of getJson");
         });
     </script>
 </head>
@@ -56,7 +53,7 @@
                 <?php
                     $filename = 'app/resources/txt/log.txt';
                     $arr = file($filename);
-                    foreach( $arr as $values){
+                    foreach($arr as $values){
                         $newarr = json_decode($values);
                         $user_name = $newarr->name;
                         $user_msg = $newarr->message;

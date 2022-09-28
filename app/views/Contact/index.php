@@ -18,46 +18,21 @@
     </style>
      <script type="text/javascript">
         $(function(){
-            console.log("outside getJson");
            $.getJSON('/Count/counter_controller')
             .done(function(data){
                 var output = "";
-                console.log(data);
                 output+= '<p>'+data+ ' page visits</p>'
                 $('#view-counter').html(output);
             })
             .fail(function(){
                 $('#view-counter').html("currently not available");
             })
-            console.log("end of getJson");
+           
         });
     </script>
 </head>
 <body>
-    
-    <?php
-    
-    //$filename = 'app/resources/txt/log.txt';
-    // if(isset($_POST['submit'])){
-    //     $array['name'] = $_POST['name'];
-    //     $array['message'] = $_POST['message'];
-    //     $string_data = json_encode($array);
-    //     $msgObject = new \app\models\Messages();
-    //     $msgObject->insert($string_data);
-    //     // write to a file
-    //     // $fh = fopen($filename,'a');
-    //     // flock($fh, LOCK_EX);
-    //     // fwrite($fh, $string_data . "\n");
-    //     // flock($fh, LOCK_UN);
-    //     // fclose($fh);
-
-    //     //header('location:/Contact/read');
-    // }
-
-    
-    ?>
-    
-<div id = "container">
+    <div id = "container">
         <header>
             <h1>CodeBros</h1>
         </header>

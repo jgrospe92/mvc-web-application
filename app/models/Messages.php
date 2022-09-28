@@ -16,4 +16,7 @@ class Messages{
            header('location:/Contact/read');
     }
 
+    public function get_file(){
+        return self::$file;
+    }
 }

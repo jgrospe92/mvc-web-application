@@ -28,6 +28,7 @@ class Count extends \app\core\Controller{
         $fh = fopen($filename, 'w');
         flock($fh, LOCK_EX);
         fwrite($fh, $counter);
+      
     }
 
 }
