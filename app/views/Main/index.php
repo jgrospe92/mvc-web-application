@@ -44,8 +44,8 @@
                 <ul>
                     <li><a class="currentPage" href="/Main/index">Landing Page</a></li>
                     <li><a href="/Main/about_us">About Us</a></li>
-                    <li><a href="/Contact/index">Contact Us </a></li>
-                    <li><a href="/Contact/read">Messages</a></li>
+                    <li><a href="/Contact/index">Add Message</a></li>
+                    <li><a href="/Contact/read">Read Message</a></li>
                 </ul>
             </nav>
             <div id="main">

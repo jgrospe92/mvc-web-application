@@ -2,8 +2,8 @@
 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                     <a class="nav-link " aria-current="page" href="/Main/about_us">About</a>
-                    <a class="nav-link " href="/Contact/index">Contact Us </a>
-                    <a class="nav-link active" href="/Contact/read">Messages</a>
+                    <a class="nav-link " href="/Contact/index">Add Message </a>
+                    <a class="nav-link active" href="/Contact/read">Read Message</a>
                     </div>
                 </div>
             </div>
@@ -24,5 +24,7 @@
                     echo '<p>' . $user_msg . '</p>';
                 }
                 ?>
+            </div>
+        </div>
             </div>
 <?php $this->view('includes/footer');
