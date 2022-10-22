@@ -18,7 +18,8 @@ class Contact extends \app\core\Controller{
             $array['message'] = $msgObject->validate_input($_POST['message']);
             $string_data = json_encode($array);
 
-            $msgObject->insert($string_data);    
+            $msgObject->insert($string_data);
+            $this->view("Contact/read"); 
         }
     }
 }

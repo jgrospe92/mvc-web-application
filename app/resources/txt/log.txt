@@ -1,1 +1,1 @@
-{"name":"jeffreygrospe@yahoo.com","message":"Keep up the good work."}
+{"name":"Jeffrey","message":"Welcome to our page, please tell us your story and what inspired you to be a software developer"}

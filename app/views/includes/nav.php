@@ -15,6 +15,30 @@
             margin-right: 1rem;
             text-align: right;
         }
+
+        .hide {
+            display: none;
+        }
+        .warn b {color: #ffff66; background-color: #333;}
+        .error b {color: #ff9966; background-color: #000;}
+
+        .good {
+            display: block;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+
+        .footer-counter {
+            position: fixed;
+            bottom: 0;
+            width: 90%;
+            height: 80px;
+        }
     </style>
     <script type="text/javascript">
         $(function() {
@@ -34,7 +58,7 @@
 <body>
     <div class="container ">
         <header class="d-flex justify-content-center p-1 text-light bg-primary bg-gradient ">
-            <h1 >CodeBros</h1>
+            <h1>CodeBros</h1>
         </header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -43,4 +67,4 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        <!-- END of HEADER -->
+                <!-- END of HEADER -->
