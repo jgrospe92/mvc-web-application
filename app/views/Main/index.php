@@ -56,10 +56,4 @@
                 </p>
             </div>
         </div>
-        <div class="footer-counter" id="view-counter"></div>
-        <footer>
-        &#169;&nbsp; Jeffrey Grospe & Philip Rieck September 11 2022. All Rights Reserved.&#174;
-        </footer>
-    </div>
-</body>
-</html>
+<?php $this->view('includes/footer');
