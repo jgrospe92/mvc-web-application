@@ -19,7 +19,7 @@
         </div>
         <div class="position-relative">
             <div class="form-floating">
-                <textarea class="form-control" name="message" id="floatingTextarea" style="height: 250px"></textarea>
+                <textarea class="form-control" name="message" id="floatingTextarea"  maxlength="200" style="height: 250px"></textarea>
                 <label for="floatingTextarea">Leave your message</label>
             </div>
             <button name="submit" type="submit" class="btn btn-primary mt-2 position-absolute bottom end-0">Submit</button>

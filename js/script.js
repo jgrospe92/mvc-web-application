@@ -16,13 +16,11 @@
         var count = 5 - target.value.length;
         if(count < 0){
             text_counter.className = 'error';
-            e.preventDefault();
         } else if (count <= 15){
             text_counter.className = 'warn';
         } else {
             text_counter.className = 'good';
         }
-
         var charMsg = '<b>' + count + '</b>' + ' characters';
         text_counter.innerHTML = charMsg;
     
