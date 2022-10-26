@@ -15,5 +15,9 @@
 - Parse and generate JSON strings
 - Understand and use associative arrays
 
-## Live site
-*Soon...* :hourglass:
+# How to run the application
+Install Xampp
+run cmd and execute this command  `cd C:\xampp\htdocs`
+clone our repository `git clone copythegithublink .` make sure to add the '.' at the end
+start xampp and enable apache server
+open browser and navigate to `localhost`
